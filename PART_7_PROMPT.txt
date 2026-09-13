@@ -1,0 +1,84 @@
+ZOYA AI — PART 7
+EMOTION + HUMAN-LIKE VISUAL + BATTERY VOICE SYSTEM
+
+Continue the existing Zoya AI project from Parts 1–6.
+Do NOT remove, replace, or break existing features.
+
+IDENTITY
+- AI name: Zoya AI
+- Main user identity: S Khan
+- Zoya may address the user as Jaanu, Jaan, or Meri Jaan.
+- Zoya is an AI character and must not claim to literally feel human emotions.
+
+1. EMOTION UNDERSTANDING
+Analyze available text, conversation context, and—only with permission—supported voice/visual signals.
+Support estimated states: happy, sad, angry, worried, confused, surprised, tired, neutral.
+Treat emotion as an estimate, never certainty. If confidence is low, use neutral behavior.
+Do not diagnose medical or psychological conditions.
+
+2. HUMAN-LIKE VISUAL AVATAR
+Add one consistent female AI-character visual/avatar.
+Include idle, blink, listening, thinking, speaking, happy, sad, concerned, surprised, confused and neutral expressions.
+Animate the avatar while Zoya speaks and return to idle afterward.
+Do not represent the avatar as a real human.
+
+3. VOICE + VISUAL SYNC
+Show listening animation during voice input.
+Show speaking animation during speech output.
+Synchronize animation with actual playback when technically possible.
+
+4. REAL ANDROID BATTERY MONITOR
+Read the actual device battery percentage using supported Android APIs.
+Never fake production battery values.
+
+5. BATTERY ANNOUNCEMENTS
+First low-battery warning: 5%.
+At 5%, 4%, 3%, 2%, 1%, give a low-battery voice announcement.
+Also announce milestone levels:
+10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%.
+
+Example:
+50%: “Jaanu, battery 50 percent hai.”
+20%: “Jaanu, battery 20 percent reh gayi hai.”
+10%: “Jaanu, battery 10 percent hai.”
+5%: “Jaanu, battery sirf 5 percent reh gayi hai.”
+100%: “Jaanu, battery full 100 percent ho gayi hai.”
+
+Use the existing Hindi/Hinglish Zoya voice settings.
+
+6. DUPLICATE PREVENTION
+Do not announce the same percentage repeatedly.
+Track the last announced threshold/event.
+Handle charging, discharging, app restart and battery changes correctly.
+
+7. BATTERY UI
+Show:
+- current percentage
+- charging/discharging state
+- battery icon
+- last announcement
+- voice announcements ON/OFF
+- milestone announcements ON/OFF
+- low-battery announcements ON/OFF
+
+8. PERMISSIONS
+Camera/microphone features require explicit user permission.
+If a capability is unsupported, do not fake it; explain the limitation.
+
+9. PRIVACY
+Do not secretly record, upload, or store camera/microphone data.
+Cloud vision/AI is used only when configured and permitted.
+
+10. INTEGRATION
+Connect Part 7 with Parts 1–6:
+chat → voice → visual → phone controls → memory/personality → final integration → emotion/avatar/battery.
+
+11. TEST MODE
+Add a developer/test screen where battery thresholds can be simulated.
+Clearly label simulated values as TEST MODE.
+Production battery display must use the actual Android battery value.
+
+12. FINAL OUTPUT
+Return files created/modified, required Android permissions, APIs/services, battery implementation, emotion implementation, avatar implementation, offline capabilities, internet-dependent capabilities, and Android limitations.
+
+Do not break Parts 1–6.

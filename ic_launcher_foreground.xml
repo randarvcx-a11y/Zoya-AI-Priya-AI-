@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Main AI Sparkle Star -->
+    <path
+        android:pathData="M54,26 C54,38 42,50 30,50 C42,50 54,62 54,74 C54,62 66,50 78,50 C66,50 54,38 54,26 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="30"
+                android:startY="26"
+                android:endX="78"
+                android:endY="74"
+                android:type="linear">
+                <item android:color="#FFFFFF" android:offset="0.0" />
+                <item android:color="#F5D0FE" android:offset="0.5" />
+                <item android:color="#E879F9" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Accent Mini Sparkle Top Right -->
+    <path
+        android:fillColor="#FDF4FF"
+        android:pathData="M73,30 C73,34 69,38 65,38 C69,38 73,42 73,46 C73,42 77,38 81,38 C77,38 73,34 73,30 Z" />
+    <!-- Accent Mini Sparkle Bottom Left -->
+    <path
+        android:fillColor="#F0ABFC"
+        android:pathData="M35,64 C35,67 32,70 29,70 C32,70 35,73 35,76 C35,73 38,70 41,70 C38,70 35,67 35,64 Z" />
+    <!-- Horizontal voice acoustic bars at bottom -->
+    <path
+        android:fillColor="#E9D5FF"
+        android:pathData="M38,80 L42,80 A2,2 0 0,1 44,82 L44,84 A2,2 0 0,1 42,86 L38,86 A2,2 0 0,1 36,84 L36,82 A2,2 0 0,1 38,80 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,76 L52,76 A2,2 0 0,1 54,78 L54,88 A2,2 0 0,1 52,90 L48,90 A2,2 0 0,1 46,88 L46,78 A2,2 0 0,1 48,76 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M58,74 L62,74 A2,2 0 0,1 64,76 L64,90 A2,2 0 0,1 62,92 L58,92 A2,2 0 0,1 56,90 L56,76 A2,2 0 0,1 58,74 Z" />
+    <path
+        android:fillColor="#E9D5FF"
+        android:pathData="M68,80 L72,80 A2,2 0 0,1 74,82 L74,84 A2,2 0 0,1 72,86 L68,86 A2,2 0 0,1 66,84 L66,82 A2,2 0 0,1 68,80 Z" />
+</vector>

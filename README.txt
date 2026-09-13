@@ -1,0 +1,1 @@
+Zoya AI Part 3 — Visual System prototype. Open index.html. Camera access is permission-based and this demo does not record/upload video.

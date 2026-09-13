@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zoya AI - Part 3 Visual</title>
+<style>
+body{margin:0;background:#080914;color:#fff;font-family:system-ui,sans-serif}
+.app{max-width:520px;margin:auto;min-height:100vh;padding:18px;box-sizing:border-box}
+.card{background:#12152a;border:1px solid #292d4d;border-radius:22px;padding:18px;margin:12px 0}
+.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:10px auto;border:3px solid #ff8a00}
+h1{text-align:center;margin:6px}.sub{text-align:center;opacity:.75}
+button{width:100%;padding:14px;margin:7px 0;border:0;border-radius:14px;background:#ff8a00;color:#111;font-weight:700;font-size:16px}
+#status{padding:12px;border-radius:12px;background:#0b0d19;margin-top:10px;min-height:24px}
+video{width:100%;border-radius:16px;background:#000;display:none;margin-top:10px}
+.small{font-size:13px;opacity:.7;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="card">
+<img id="avatar" class="avatar" src="zoya.svg" alt="Zoya AI">
+<h1>Zoya AI</h1><div class="sub">Part 3 • Visual System</div>
+</div>
+<div class="card">
+<button onclick="startCamera()">Open Camera</button>
+<button onclick="stopCamera()">Close Camera</button>
+<video id="video" autoplay playsinline></video>
+<div id="status">Camera is off.</div>
+</div>
+<div class="card">
+<b>Visual assistant foundation</b>
+<p class="small">This prototype previews camera access and visual-system UI. It does not record or upload camera data. Real AI vision requires a compatible vision API/model and explicit permissions.</p>
+</div>
+</div>
+<script>
+let stream=null;
+const video=document.getElementById('video'), status=document.getElementById('status');
+async function startCamera(){
+ try{
+  stream=await navigator.mediaDevices.getUserMedia({video:true,audio:false});
+  video.srcObject=stream; video.style.display='block';
+  status.textContent='Camera is active. Zoya can use a connected vision model when configured.';
+ }catch(e){status.textContent='Camera permission was denied or is unavailable.';}
+}
+function stopCamera(){
+ if(stream) stream.getTracks().forEach(t=>t.stop());
+ stream=null; video.srcObject=null; video.style.display='none';
+ status.textContent='Camera is off.';
+}
+</script>
+</body></html>
